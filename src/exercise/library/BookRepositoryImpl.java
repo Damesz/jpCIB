@@ -31,4 +31,8 @@ public class BookRepositoryImpl implements BookRepository {
     public Book retrieveBook(String isbn) {
         return books.get(isbn);
     }
+
+    public String getISBN_PREFIX() {
+        return ISBN_PREFIX;
+    }
 }
